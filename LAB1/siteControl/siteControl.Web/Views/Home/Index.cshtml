@@ -1,0 +1,70 @@
+﻿@model siteControl.Web.Models.User
+@{
+    ViewBag.Title = "Index";
+
+}
+
+
+<div id="Home" class="container-fluid  slider-pad">
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active ">
+                <img src="img/1.png" class="d-block img-fluid myimag">
+            </div>
+            <div class="carousel-item ">
+                <img src="img/2.png" class="d-block img-fluid myimag">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.png" class="d-block img-fluid myimag">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container-fluid text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2 class="text-center text-department ">Our Services</h2>
+            <hr>
+            <div class="clearfix"></div>
+            <p class="text-center text-comment">A easy paltform to manage trucks status in real-time </p>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-10 service ">
+                <i class="fa fa-align-center fa-bell imag-param fa-2x "></i>
+                <h4 class="text-title">Available Truck?</h4>
+                <p class="text-div">No reason to check delivery status. Remainder will come by default. Check your page daily and create the strategy easy and actual to real-time.</p>
+            </div>
+            <div class="col-md-3 col-sm-10 service">
+                <i class="fa fa-align-center fa-comments imag-param fa-2x"></i>
+                <h4 class="text-title">Broker's proposal?</h4>
+                <p class="text-div">Each broker's offer is not in vain anymore. Check all company's trucks by time, date and location and make calculus about the rate. Work for future.</p>
+            </div>
+            <div class="col-md-3 col-sm-10 service  ">
+                <i class="fa fa-align-center fa-thumb-tack imag-param fa-2x"></i>
+                <h4 class="text-title">Not your call?</h4>
+                <p class="text-div">With one click is possible to find all turck's information and to direct correctly the call to a co-worker. A easy way to work properly and productive.</p>
+            </div>
+            <div class="col-md-3 col-sm-10 service">
+                <i class="fa fa-align-center fa-truck imag-param fa-2x"></i>
+                <h4 class="text-title">Done for today?</h4>
+                <p class="text-div">Cover your trucks for next days. Work in advance or check others dispatchers' status. Support the whole company. Be a family!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

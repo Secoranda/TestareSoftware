@@ -1,0 +1,52 @@
+﻿
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-custom">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+               
+                    <i class="fa fa-align-center fa-eye fa-2x logo-color"></i>
+                    <font class="logo-name">Trucking</font>
+             
+            </div>
+    @if (@User.Identity.IsAuthenticated)
+    {
+        <ul class="navbar-nav collapse pl-2">
+            <li>
+                <a href="#menu-toggle" class="btn btn-outline-secondary menu_color" id="menu-toggle">
+                    <font>MENU</font>
+                </a>
+            </li>
+        </ul>
+       
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li  id=" main"> @Html.ActionLink("Hello " + User.Identity.Name + "!", "MainPage", "User", new { area = "" }, new { @class = "navbar-brand" })</li>
+        </ul>
+           
+        <ul class="nav navbar-nav collapse navbar-right  w-150" >
+            <li  id="logout"> <a class="text-white" href="@Url.Action("Logout", "Auth")">Logout</a></li>
+        </ul>
+}
+else
+{
+        <ul class="navbar-nav collapse w-150 pl-2">
+            <li id="home"> @Html.ActionLink("Home", "Index", "Home", new { area = " " }, new { @class = "navbar-brand" })</li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+
+            <li id="registration">@Html.ActionLink("Registration", "Registration", "Auth", new { area = " " }, new { @class = "navbar-brand"})</li>
+            <li id="login">@Html.ActionLink("Login", "Login", "Auth", new { area = " " }, new { @class = "navbar-brand" })</li>
+
+        </ul>
+}
+        </div>
+          
+      
+    </nav>
+                    
+    
+

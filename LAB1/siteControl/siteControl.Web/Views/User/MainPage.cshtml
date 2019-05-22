@@ -1,0 +1,37 @@
+﻿
+@model siteControl.Web.Models.Truck
+
+@{
+    ViewBag.Title = "Trucks";
+
+}
+<div class="text-center">
+    <h2 class="text-department">POST TRUCK</h2>
+
+    @Html.ValidationSummary(true)
+    @using (Html.BeginForm("MainPage", "User"))
+    {
+
+        @Html.LabelFor(u => u.DispatchExt)<br />
+        @Html.TextBoxFor(u => u.DispatchExt)<br /><br />
+        @Html.ValidationMessageFor(m => m.DispatchExt, "", new { @class = "text-danger" })
+        @Html.LabelFor(u => u.TruckID)<br />
+        @Html.TextBoxFor(u => u.TruckID)<br /><br />
+        @Html.ValidationMessageFor(m => m.TruckID, "", new { @class = "text-danger" })
+        @Html.LabelFor(u => u.CurrentLocation)<br />
+        @Html.TextBoxFor(u => u.CurrentLocation)<br /><br />
+        @Html.ValidationMessageFor(m => m.CurrentLocation, "", new { @class = "text-danger" })
+        @Html.LabelFor(u => u.CurrentStatus)<br />
+        @Html.TextBoxFor(u => u.CurrentStatus)<br /><br />
+        @Html.ValidationMessageFor(m => m.CurrentStatus, "", new { @class = "text-danger" })<br /><br />
+
+        <p>
+            <button type="submit" class="btn btn-secondary">Submit </button>
+        </p>
+
+
+
+    }
+
+
+</div>

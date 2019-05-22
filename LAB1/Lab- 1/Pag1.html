@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Main Page </title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-custom"  >
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"  >
+                <i class="fa fa-align-center fa-eye fa-2x logo-color" ></i>
+                <font class="logo-name" >Trucking</font></a>
+                <a href="#menu-toggle" class="btn btn-outline-secondary menu_color" id="menu-toggle" >
+                <i class="fa fa-list "></i></a>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="container filter_style">
+                            <div class="row">    
+                                <div class="input-group ">
+                                    <div class="input-group-btn search-panel ">
+                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle menu_color" data-toggle="dropdown" >
+                                            <span id="search_concept" >Filter by</span> 
+                                        </button>
+                                        <ul class="dropdown-menu " role="menu">
+                                            <li><a class="dropdown-item" href="#truck">Truck No.</a></li>
+                                            <li><a class="dropdown-item" href="#dispetcher">Dispatcher</a></li>
+                                            <li><a class="dropdown-item" href="#date">Date </a></li>
+                                            <li><a class="dropdown-item" href="#location">Location</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="dropdown-item" href="#all">Anything</a></li>
+                                        </ul>
+                                    </div>     
+                                    <input type="text" id="myInput" placeholder="  &#xF002;   Search...">
+                                </div>
+                            </div>
+                        </div>
+                    </li>      
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wrapper">
+    <section class="py-5 ">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav py-5 menu_text">
+                <li>
+                    <a href="#">Available Trucks</a> <hr>
+                </li>
+                <li>
+                    <a href="#">My Trucks</a><hr>
+                </li>
+                <li>
+                    <a href="#">Post Truck</a><hr>
+                </li>
+
+            </ul>
+        </div>
+    <div id="page-content-wrapper">
+      
+    <table class="table table-hover table-nonfluid post">
+    <thead>
+      <tr>
+        <th>Dispatcher#</th>
+        <th>Truck#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Date</th>
+        <th>Time</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>114</td>
+        <td>076</td>
+        <td>John</td>
+        <td>Mattison</td>
+        <td>IL</td>
+        <td>Chicago</td>
+        <td>02/14/2018</td>
+        <td>3:00pm</td>
+        <td>TX</td>
+        <td>Dallas</td>
+        <td>02/16/2018</td>
+        <td>8:00am</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>106</td>
+        <td>David</td>
+        <td>Jordan</td>
+        <td>WA</td>
+        <td>Seattle</td>
+        <td>02/14/2018</td>
+        <td>6:00pm</td>
+        <td>NJ</td>
+        <td>Newark</td>
+        <td>02/19/2018</td>
+        <td>6:00am</td>
+      </tr>
+      <tr>
+        <td>110</td>
+        <td>003</td>
+        <td>Matt</td>
+        <td>Peterson</td>
+        <td>IN</td>
+        <td>Indianapolis</td>
+        <td>02/14/2018</td>
+        <td>12:00pm</td>
+        <td>UT</td>
+        <td>Salt Lake</td>
+        <td>02/17/2018</td>
+        <td>9:00am</td>
+      </tr>
+
+    </tbody>
+  </table> 
+  <hr>
+</div>
+        
+        
+
+
+    </section>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/search.js"></script>
+
+</body>
+</html>
